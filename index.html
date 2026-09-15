@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associação Apoiar - Site em Construção</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="public/images/favicon-Associação-Apoiar.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              green: '#2e7d32',
+              lightGreen: '#4caf50',
+              darkGreen: '#1b5e20',
+              accent: '#81c784',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .bg-hero {
+      background-image: url('public/images/background4-7683751.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .glass-card {
+      background: rgba(15, 23, 42, 0.70);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen flex flex-col justify-between relative overflow-x-hidden">
+
+  <!-- Hero Background Image & Gradient Overlay -->
+  <div class="fixed inset-0 bg-hero -z-20"></div>
+  <div class="fixed inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/70 to-slate-950/90 -z-10"></div>
+
+  <!-- Main Container -->
+  <div class="min-h-screen flex flex-col justify-between px-4 py-8 md:py-12 max-w-6xl mx-auto w-full">
+
+    <!-- Top Header: Logo Centralizada -->
+    <header class="w-full flex justify-center items-center pt-2 pb-6">
+      <img 
+        src="public/images/LOGO_FUNDO_TRANSPARENTE-2600022-7684018.webp" 
+        alt="Associação Apoiar Logo" 
+        class="h-24 md:h-32 lg:h-36 w-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
+      >
+    </header>
+
+    <!-- Hero Content Center -->
+    <main class="flex-1 flex flex-col justify-center items-center text-center my-8">
+      <div class="glass-card p-8 md:p-12 lg:p-14 rounded-3xl max-w-3xl w-full shadow-2xl relative overflow-hidden group">
+        
+        <!-- Decorative subtle accent line -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent"></div>
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs md:text-sm font-semibold tracking-wide uppercase mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>Nosso Novo Portal Está Chegando</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+          Estamos preparando uma <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">nova experiência</span> para você
+        </h1>
+
+        <!-- Description -->
+        <p class="text-slate-300 text-base md:text-xl font-normal leading-relaxed max-w-2xl mx-auto mb-10">
+          A <strong>Associação Apoiar</strong> trabalha continuamente para oferecer acolhimento, suporte e a melhor experiência para todos os nossos associados e comunidade. Em breve nosso novo site estará no ar!
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-md mx-auto">
+          
+          <!-- Botão 1: ÁREA DO ASSOCIADO -->
+          <a 
+            href="https://sistema.apoiarcannabis.org.br/AreaAssociados" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full sm:w-1/2 flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-white font-semibold text-sm md:text-base border border-slate-600/50 hover:border-emerald-500/50 transition-all duration-300 shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 active:translate-y-0 group/btn"
+          >
+            <i class="fa-solid fa-user-lock text-emerald-400 text-lg group-hover/btn:scale-110 transition-transform"></i>
+            <span>ÁREA DO ASSOCIADO</span>
+          </a>
+
+          <!-- Botão 2: FALE CONOSCO -->
+          <a 
+            href="https://wa.me/5584986970000?text=Ol%C3%A1,%20preciso%20de%20atendimento!" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full sm:w-1/2 flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm md:text-base transition-all duration-300 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-600/30 hover:-translate-y-0.5 active:translate-y-0 group/btn"
+          >
+            <i class="fa-brands fa-whatsapp text-white text-xl group-hover/btn:scale-110 transition-transform"></i>
+            <span>FALE CONOSCO</span>
+          </a>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full text-center text-slate-400 text-xs md:text-sm py-4 border-t border-slate-800/50">
+      <p>&copy; 2026 Associação Apoiar. Todos os direitos reservados.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
